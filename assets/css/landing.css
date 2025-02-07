@@ -35,16 +35,23 @@ header {
 /*Hamburger Buton CSS*/
 .menu-btn {
     width: 40px;
+    height: 40px;
     background: transparent;
     border: none;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     cursor: pointer;
-    gap: 4px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
 }
 .menu-btn span {
     width: 100%;
-    height: 4px;
+    height: 4.5px;
     background: black;
     border: 5px;
     transition: all 0.3s ease-in-out;
@@ -69,7 +76,7 @@ header {
     right: 0;
     width: 50%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background-color: var(--Green) 0.2;
     justify-content: center;
     align-items: center;
 }
@@ -102,11 +109,5 @@ nav ul li a {
 
 /* Kapat Butonu */
 .close-btn {
-    position: absolute;
-    top: 4px;
-    right: 17px;
-    background: rgba(0, 0, 0, 0.2);
-    border: none;
-    font-size: 50px;
-    cursor: pointer;
+    display: none;
 }
