@@ -1,8 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-
+:root {
+    --Green:#B9FF66;
+    --Dark: #191A23;
+    --White: #F3F3F3;
+}
+body {
+    background-color: var(--White);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Space Grotesk";
+}
+/*MOBIL SURUM*/
+.container-posivitus {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+}
+/*HEADER MOBİL SÜRÜM*/
+header {
+    margin-top: 20px;
+    width: 100%;
+    padding-inline: 20px;
+    display: flex;
+    gap: 222px;
+    align-items: center;
+}
+.header-links {
+    display: none;
+}
+/*Hamburger Buton CSS*/
+.menu-btn {
+    width: 40px;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+.menu-btn span {
+    width: 100%;
+    height: 4px;
+    background: black;
+    border: 5px;
+    transition: all 0.3s ease-in-out;
+}
+/*Buton Aktif Olduğunda X e dönüşmesi*/
+.menu-btn.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+/* Menü Modalı */
+.menu-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menü İçeriği */
+.menu-content {
+    background: var(--White);
+    padding: 20px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Menü Listesi */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Kapat Butonu */
+.close-btn {
+    position: absolute;
+    top: 4px;
+    right: 17px;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
 }
