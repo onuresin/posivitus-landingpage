@@ -19,6 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 430px;
+    gap: 20px;
 }
 /*HEADER MOBİL SÜRÜM*/
 header {
@@ -76,9 +77,17 @@ header {
     right: 0;
     width: 50%;
     height: 100%;
-    background-color: var(--Green) 0.2;
+    background-color: rgba(39, 40, 59, 0.733);
     justify-content: center;
     align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.menu-modal nav ul li a {
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 /* Menü İçeriği */
@@ -110,4 +119,44 @@ nav ul li a {
 /* Kapat Butonu */
 .close-btn {
     display: none;
+}
+/*SECTION*/
+.content-1-top {
+    margin-top: 20px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content-1-top h2 {
+    color: #000;
+    font-size: 43px;
+    font-weight: 500;
+    line-height: normal;
+}
+.content-1-top img {
+    width: 100%;
+    padding-inline: 14px;
+}
+.content-1-bot {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.content-1-bot h2 {
+    padding-inline: 10px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.content-1-bot button{
+    width: 100%;
+    padding: 20px 35px;
+    background-color: var(--Dark);
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    border-radius: 14px;
 }
