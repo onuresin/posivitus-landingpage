@@ -2,7 +2,8 @@
 :root {
     --Green:#B9FF66;
     --Dark: #191A23;
-    --White: #F3F3F3;
+    --White: #FFF;
+    --Grey: #f3f3f3;
 }
 body {
     background-color: var(--White);
@@ -183,5 +184,72 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 70px;
+}
+/*SECTION-3 SERVICES*/
+.section-content-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.services-top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.services-top h3 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #B9FF66;
+    width: 39%;
+    border-radius: 10px;
+    text-align: center;
+    padding-inline: 7px;
+}
+.services-top h4 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.services-bot {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+}
+.services-bot img {width: 100%;}
+.services-proposal {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+    gap: 20px;
+    width: 100%;
+    background-color: var(--Grey);
+    border-radius: 45px;
+}
+.services-proposal h4 {
+    color: #000;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.services-proposal h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.btn-proposal {
+    width: 100%;
+    padding: 20px 35px;
+    background-color: var(--Dark);
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    border-radius: 14px;
+    border: none;
 }
