@@ -327,3 +327,92 @@ section {
     line-height: 28px; /* 140% */
     text-decoration: none;
 }
+/*TEAM SECTION*/
+.black-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--Dark);
+}
+.section-content-6 {
+    padding-inline: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.team-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.team-text h2 {
+    font-size: 36px;
+    font-weight: 500;
+    background-color: var(--Green);
+    padding-inline: 7px;
+    border-radius: 7px;
+}
+.team-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    text-align: center;
+}
+.team-cards-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.team-cards-top, .team-cards-bot {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.team-card-box {
+    border: 1px solid #191A23;
+    border-radius: 45px;
+    width: 100%;
+    box-shadow: 0px 5px 0px 0px var(--Dark);
+    padding-inline: 40px 35px;
+}
+.team-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 35px;
+}
+.card-title {
+    display: flex;
+    gap: 20px;
+}
+.title-name {
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.title-name h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+.title-name p, .card-experiment p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.brian, .sarah {
+    display: none;
+}
+.section-content-6 button {
+    width: 100%;
+    padding: 20px 35px;
+    background-color: var(--Dark);
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    border-radius: 14px;
+}

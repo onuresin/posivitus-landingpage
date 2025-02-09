@@ -1,9 +1,10 @@
 .accordion {
-    max-width: 480px;
+    width: 100%;
+    padding-inline: 20px;
 }
 .accordion-item {
     background: #f8f8f8; /* Açık gri arka plan */
-    border-radius: 15px; /* Kenarları yuvarlat */
+    border-radius: 45px; /* Kenarları yuvarlat */
     margin-bottom: 12px;
     border: 2px solid black; /* Siyah ince çerçeve */
     box-shadow: 3px 3px 0px black; /* Hafif kaydırılmış siyah gölge */
