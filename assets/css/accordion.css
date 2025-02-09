@@ -1,0 +1,47 @@
+.accordion {
+    max-width: 480px;
+}
+.accordion-item {
+    background: #f8f8f8; /* Açık gri arka plan */
+    border-radius: 15px; /* Kenarları yuvarlat */
+    margin-bottom: 12px;
+    border: 2px solid black; /* Siyah ince çerçeve */
+    box-shadow: 3px 3px 0px black; /* Hafif kaydırılmış siyah gölge */
+    overflow: hidden;
+    transition: all 0.3s ease-in-out; /* Geçiş efekti */
+}
+
+.accordion-item.active {
+    background: #b8ff69; /* Açık yeşil renk */
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.number {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    font-size: 14px;
+    border-top: 1px solid black; /* Açıklama içeriğinin üstüne çizgi */
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
