@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+:root {
+    --Green:#B9FF66;
+    --Dark: #191A23;
+    --White: #FFF;
+    --Grey: #f3f3f3;
+}
+/* Slider Genel Konteyner */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+    overflow: hidden;
+    background: var(--Dark);
+    border-radius: 45px;
+    padding: 20px;
+    text-align: center;
+    color: var(--White);
+}
+
+/* Kaydırılan Alan */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Bireysel Slide */
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+/* Butonlar */
+.prev, .next {
+    position: absolute;
+    bottom: 10%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 45%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Göstergeler (Dots) */
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: var(--Green);
+}

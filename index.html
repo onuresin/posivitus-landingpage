@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/landing.css">
     <link rel="stylesheet" href="assets/css/accordion.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <script src="assets/js/modal.js" ></script>
     <script src="assets/js/accordion.js" defer></script>
+    <script src="assets/js/swiper.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <title>Posivitus Landingpage</title>
 </head>
 <body>
@@ -157,17 +161,17 @@
               <div class="case-studies-exams">
                 <div class="exams">
                   <p>Yerel bir restoran için, web sitesi trafiğinde %50 ve satışlarda %25 artışla sonuçlanan hedefli bir PPC kampanyası uyguladık.</p>
-                  <a href="#">Learn More <img src="assets/images/arrow.svg" alt="arrow"></a>
+                  <a href="#">Daha fazlasını öğren <img src="assets/images/arrow.svg" alt="arrow"></a>
                 </div>
                 <span class="line"><svg width="186" height="1" xmlns="http://www.w3.org/2000/svg"><rect width="180" height="1" fill="#fff"/></svg></span>
                 <div class="exams">
                   <p>Bir B2B yazılım şirketi için, anahtar kelimeler için ilk sayfa sıralaması ve organik trafikte %200 artış sağlayan bir SEO stratejisi geliştirdik.</p>
-                  <a href="#">Learn More <img src="assets/images/arrow.svg" alt="arrow"></a>
+                  <a href="#">Daha fazlasını öğren <img src="assets/images/arrow.svg" alt="arrow"></a>
                 </div>
                 <span class="line"><svg width="186" height="1" xmlns="http://www.w3.org/2000/svg"><rect width="180" height="1" fill="#fff"/></svg></span>
                 <div class="exams">
                   <p>Ulusal bir perakende zinciri için takipçi sayısını %25 artıran ve online satışlarda %20 artış sağlayan bir sosyal medya pazarlama kampanyası oluşturduk.</p>
-                  <a href="#">Learn More <img src="assets/images/arrow.svg" alt="arrow"></a>
+                  <a href="#">Daha fazlasını öğren <img src="assets/images/arrow.svg" alt="arrow"></a>
                 </div>
               </div>
             </div>
@@ -337,6 +341,55 @@
                 </div>
               </div>
               <button>Bütün Ekibi Gör</button>
+            </div>
+            <div class="section-content-7">
+              <div class="testimonials">
+                <h3>Referanslar</h3>
+                <p>Müşterilerimizden Memnuniyetlerini Dinleyin: Dijital Pazarlama Hizmetlerimiz Hakkında Daha Fazla Bilgi Edinmek İçin Referanslarımızı Okuyun</p>
+              </div>
+              <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active">
+                        <div class="slide-top">
+                          <p>"Geçtiğimiz yıldan bu yana Positivus ile çalışıyoruz ve çabalarının bir sonucu olarak web sitesi trafiğinde ve potansiyel müşterilerde önemli bir artış gördük. Ekip profesyonel, duyarlı ve işimizin başarısını gerçekten önemsiyor. Positivus'u çevrimiçi varlıklarını büyütmek isteyen tüm şirketlere şiddetle tavsiye ediyoruz."</p>
+                        </div>
+                        <div class="slide-bot">
+                          <h3>Kerem ÜNVER</h3>
+                          <p>XYZ A.Ş. Pazarlama Direktörü</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                      <div class="slide-top">
+                        <p>"Positivus ile çalışmaya başladığımızdan beri web sitemizin etkileşimi ve müşteri dönüşüm oranlarımızda büyük bir artış yaşadık. Profesyonel ve yenilikçi yaklaşımları sayesinde markamızın dijital varlığını güçlendirdik. İşlerini titizlikle yapan bu ekibi kesinlikle tavsiye ederim!"</p>
+                      </div>
+                      <div class="slide-bot">
+                        <h3>Pelin KARSU</h3>
+                        <p>petlab.com CEO</p>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="slide-top">
+                        <p>"Dijital pazarlama konusundaki uzmanlıkları sayesinde markamızın çevrimiçi varlığını önemli ölçüde geliştirdik. Positivus, veriye dayalı stratejileri ve sürekli desteğiyle bizim için güvenilir bir partner oldu. Her ölçekten işletmeye gönül rahatlığıyla öneriyorum!"</p>
+                      </div>
+                      <div class="slide-bot">
+                        <h3>Eray ÜÇELOK</h3>
+                        <p>POTS LAB Kurucusu</p>
+                      </div>
+                    </div>
+                </div>
+            
+                <!-- Butonlar -->
+                <button class="prev" onclick="prevSlide()">❮</button>
+                <button class="next" onclick="nextSlide()">❯</button>
+            
+                <!-- Göstergeler (Dots) -->
+                <div class="dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+            
             </div>
         </section>
     </div>
