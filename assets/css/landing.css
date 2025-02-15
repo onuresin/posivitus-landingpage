@@ -449,3 +449,126 @@ footer {
     width: 100%;
     background-color: var(--Dark);
 }
+.footer-top, .footer-bot {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    padding: 50px 20px 30px 20px;
+    align-items: center;
+}
+.footer-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.desktop {
+    display: none;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-links li {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-links a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--White);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    align-items: center;
+}
+.footer-contacts h3 {
+    background-color: var(--Green);
+    padding-inline: 7px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+.contact-p {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--White);
+}
+.footer-mail-subs {
+    width: 100%;
+    padding: 30px 30px;
+    border-radius: 14px;
+    background: #292A32;
+}
+.footer-mail-subs form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+}
+.footer-mail-subs input {
+    padding: 21px 25px ;
+    border: 1px solid var(--White);
+    border-radius: 14px;
+    background-color: transparent;
+    color: var(--White);
+}
+.footer-mail-subs button {
+    padding: 20px 35px;
+    background-color: var(--Green);
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    border-radius: 14px;
+    border: none;
+}
+.footer-deep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+    width: 100%;
+}
+.footer-line {
+    background-color: var(--White);
+    height: 1px;
+    width: 100%;
+}
+.footer-last-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.footer-last-section p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */ 
+    color: var(--White);
+}
+.footer-last-section a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    color: var(--White);
+}
