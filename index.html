@@ -11,6 +11,7 @@
     <script src="assets/js/swiper.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/mailcheck.js" defer></script>
     <title>Posivitus Landingpage</title>
 </head>
 <body>
@@ -56,7 +57,7 @@
                 </div>
                 <div class="content-1-bot">
                     <h2>Dijital pazarlama ajansımız, SEO, PPC, sosyal medya pazarlaması ve içerik oluşturma gibi bir dizi hizmet aracılığıyla işletmelerin çevrimiçi ortamda büyümelerine ve başarılı olmalarına yardımcı oluyoruz.</h2>
-                    <button>Bilgi almak için rezervasyon yaptırın</button>
+                    <button>Rezervasyon İçin Tıklayın</button>
                 </div>
             </div>
             <div class="section-content-2">
@@ -392,7 +393,39 @@
             
             </div>
             <div class="section-content-8">
-
+              <div class="content-8-top">
+                <h3>Bizimle İletişim Kur</h3>
+                <p>Bizimle İletişime Geçin: Dijital Pazarlama İhtiyaçlarınızı Görüşelim</p>
+              </div>
+              <div class="content-8-bot">
+                <div class="contact-form">
+                  <form class="radio-buttons">
+                    <span>
+                      <input type="radio" id="merhaba" name="contactOption" value="merhaba" checked>
+                      <label for="merhaba">Merhaba De!</label>
+                    </span>
+                    <span>
+                      <input type="radio" id="not" name="contactOption" value="not">
+                      <label for="not">Teklif Alın</label>
+                    </span>
+                  </form>
+                  <form class="form-contact" action="mesaj" method="post" id="contactForm">
+                    <span class="name-sec">
+                      <label for="isim">İsim</label> <br>
+                      <input type="text" id="isim" placeholder="İsim">
+                    </span>
+                    <span class="email-sec">
+                      <label for="eposta">E-Posta *</label><br>
+                      <input type="email" id="eposta" placeholder="E-Posta"><br>
+                    </span>
+                    <span class="message-sec">
+                      <label for="mesaj">Mesaj*</label><br>
+                      <input type="text" id="mesaj" placeholder="Mesaj">
+                    </span>
+                    <button class="contact-but" type="submit">Gönder</button>
+                  </form>
+                </div>
+              </div>
             </div>
         </section>
         <footer>

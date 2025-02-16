@@ -131,6 +131,7 @@ section {
     gap: 60px;
 }
 .content-1-top {
+    width: 100%;
     margin-top: 20px;
     padding-inline: 20px;
     display: flex;
@@ -148,9 +149,11 @@ section {
     padding-inline: 14px;
 }
 .content-1-bot {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding-inline:20px ;
 }
 .content-1-bot h2 {
     padding-inline: 10px;
@@ -177,14 +180,18 @@ section {
 }
 .company-top {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding-inline: 20px;
 }
 .company-bot {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 25px;
+    padding-inline:20px ;
 }
+
 /*SECTION-3 SERVICES*/
 .section-content-3 {
     display: flex;
@@ -219,6 +226,7 @@ section {
     width: 100%;
     align-items: center;
     gap: 30px;
+    padding-inline: 20px;
 }
 .services-bot img {width: 100%;}
 .services-proposal {
@@ -416,7 +424,7 @@ section {
     line-height: 28px;
     border-radius: 14px;
 }
-/*SECTION CONTENT 7*/
+/*SECTION-7*/
 .section-content-7 {
     display: flex;
     flex-direction: column;
@@ -443,6 +451,86 @@ section {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px; /* 150% */
+}
+/*SECTION-8*/
+.section-content-8 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-inline: 20px;
+}
+.content-8-top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.content-8-top h3 {
+    background-color: var(--Green);
+    padding-inline: 7px;
+    border-radius: 7px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: normal;
+}
+.content-8-top p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    text-align: center;
+}
+input[type="radio"] {
+    accent-color: #B9FF66;
+
+}
+.radio-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    gap: 20px;
+}
+.form-contact label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+.form-contact input {
+    width: 100%;
+    padding: 15px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.contact-but {
+    width: 100%;
+    padding: 20px 35px;
+    background-color: var(--Dark);
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    border-radius: 14px;
+    border: none;
+}
+.name-sec, .email-sec, .message-sec {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.message-sec input {
+    height: 132px;
 }
 /*FOOTER*/
 footer {
@@ -571,4 +659,55 @@ footer {
     font-weight: 400;
     line-height: 24px; /* 150% */
     color: var(--White);
+}
+@media only screen and (min-width:431px) {
+    .container-posivitus {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        gap: 70px;
+    }
+    .menu-btn {
+        display: none;
+    }
+    .header-links {
+        display: block;
+    }
+    .header-links ul {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        text-decoration: none;
+    }
+    .header-links ul li {
+        position: relative;
+        border-bottom: 1px solid transparent; /* Başlangıçta şeffaf */
+    }
+    .header-links ul {
+        list-style: none;
+    }
+    .header-links ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px; /* 140% */
+    }
+    .header-links ul li::after {
+    content: ""; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Başlangıçta görünmez */
+    height: 2px; /* Border kalınlığı */
+    background-color: #000; /* Border rengi */
+    transition: width 0.3s ease-in-out; /* Animasyon efekti */
+    }
+    .header-links ul li:hover::after {
+        width: 100%; 
+    }
 }
