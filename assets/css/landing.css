@@ -33,7 +33,7 @@ header {
     gap: 222px;
     align-items: center;
 }
-.header-links, .service-desktop, .section-content-1-desktop {
+.header-links, .service-desktop, .section-content-1-desktop, .line-vert {
     display: none;
 }
 /*Hamburger Buton CSS*/
@@ -886,5 +886,37 @@ footer {
         cursor: pointer;
         background-color: var(--Green);
         color: var(--Dark);
+    }
+    .section-content-4 {
+        gap: 80px;
+    }
+    .case-studies {
+        padding-inline: 100px;
+        width: 100%;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+    }
+    .case-studies h2 {
+        font-size: 40px;
+        line-height: normal;
+        white-space: nowrap;
+    }
+    .case-studies p {
+        font-size: 18px;
+    }
+    .case-studies-exams {
+        flex-direction: row;
+        padding: 70px 60px;
+        gap: 60px;
+    }
+    .line {
+        display: none;
+    }
+    .line-vert {
+        display: block;
+        height: 186px;
+        background-color: var(--White);
+        width: 2px;
     }
 }

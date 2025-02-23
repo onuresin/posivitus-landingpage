@@ -47,3 +47,8 @@
 .accordion-item.active .accordion-content {
     display: block;
 }
+@media (min-width:1206px) {
+    .accordion-item {
+        padding: 41px 60px;
+    }
+}
