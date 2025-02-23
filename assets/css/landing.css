@@ -33,7 +33,7 @@ header {
     gap: 222px;
     align-items: center;
 }
-.header-links {
+.header-links, .service-desktop, .section-content-1-desktop {
     display: none;
 }
 /*Hamburger Buton CSS*/
@@ -235,7 +235,7 @@ section {
     gap: 30px;
 }
 .services-bot img {width: 100%;}
-.services-proposal {
+.proposal-inner {
     display: flex;
     flex-direction: column;
     padding: 50px 50px;
@@ -244,14 +244,14 @@ section {
     background-color: var(--Grey);
     border-radius: 45px;
 }
-.services-proposal h4 {
+.proposal-inner h4 {
     color: #000;
     font-size: 26px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
-.services-proposal h5 {
+.proposal-inner h5 {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px; /* 150% */
@@ -849,8 +849,6 @@ footer {
         line-height: normal;
         text-align: start;
     }
-
-
     .services-bot-group {
         padding-inline: 100px;
         display: grid;
@@ -858,5 +856,35 @@ footer {
         grid-gap: 40px; /* Resimler arası boşluk (isteğe bağlı) */
         justify-content: space-between; /* Resimleri sütun içinde ortalar */
         align-items: center; /* Resimleri satır içinde dikeyde ortalar */
+    }
+    .services-proposal {
+        display: flex;
+        align-items: center;
+        padding-inline: 100px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .proposal-inner {
+        padding-inline: 60px;
+        width: 44.64%;
+    }
+    .proposal-inner h4 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: normal; 
+    }
+    .proposal-inner h5 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .service-desktop {
+        display: block;
+        width: 32.05%;
+    }
+    .btn-proposal:hover {
+        cursor: pointer;
+        background-color: var(--Green);
+        color: var(--Dark);
     }
 }
